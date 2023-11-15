@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Titillium+Web:ital@1&display=swap');
+body {
+    margin: 0;
+    font-family: 'Titillium Web';
+    color: #333;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(45,7,97,1) 78%);
+    padding: 0px 20px;
+    background-size: cover;
+    position: relative;
+}
+html {
+    scroll-behavior: smooth;
+  }
+#temp-effect{
+    position: absolute;
+    top:-30%;
+    left: 30%;
+    width: 37%;
+    z-index: 0;
+    mix-blend-mode:overlay;
+    transform: rotate(0deg);
+    filter: sepia(100%) saturate(100%)
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:40px;
+    padding-left:40px;
+    margin-top: -30px;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 1000;
+     */
+}
+
+.nav-main {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position:sticky;
+}
+
+.nav-main li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 7px;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+}
+
+.nav-main li a:hover {
+    color: black;
+    background-color: white;
+    font-weight: 600;
+    transform: translateY(-5px); /* Lift on hover */
+}
+
+.nav-socials {
+    display: flex;
+    margin-left: 20px;
+}
+
+.nav-socials a {
+    margin: 0 5px;
+}
+
+.logo-unit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-unit p{
+    font-size: 400%;
+    height: auto;
+    font-family: 'black ops one';
+    margin:0 100px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    color: white;
+    margin-right:25%;
+    margin-left:25%;
+}
+
+.techy-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 15px;
+    background-color: #4c4c4c;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+#btn{
+    padding: 20px 0;
+}
+.btnimg{
+    width: 20px;
+    justify-content: center;
+    padding: 0 10px;
+}
+.discord{
+    background-color: rgb(109, 109, 254);
+}
+.github{
+    background-color: #333;
+}
+.instagram{
+    background-color: #ff446f;
+}
+.apply{
+    background-color: blue;
+}
+.techy-button:hover {
+    background-color: #6c6c6c;
+    transform: translateY(-5px); /* Lift on hover */
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.Sponsors{
+    margin-top: 150px;
+    position: relative;
+    z-index: 1;
+}
+.byb p{
+    text-align: center;
+    opacity: 50%;
+}
+
+#img_host{
+    width: 20%;
+    padding: 0 30px;
+    transition: transform 0.3s ease;
+}
+.vitc{
+    background-color: white;
+    height :100px;
+}
+.host{
+    margin-left: 20%;
+}
+
+.other_sponsors{
+    padding-top: 100px;
+}
+.marquee_sponsors{
+    padding:0 300px;
+}
+#mar_img{
+    width: 100px;
+    padding:-10;
+    margin: 0 50px;
+}
+
+#img_host:hover{
+    transform: translateY(-5px);
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+
+@media screen and (max-width: 768px) {
+    .body{
+        background-color:rgb(49, 21, 113);
+        margin: auto;
+    
+    }
+    .nav-container{
+        margin:20px auto;
+        padding:0 0;
+    }
+    .nav-socials{
+        display: none;
+    }
+    .nav-main{
+        margin:auto;
+        font-size: 9.5px;
+    }
+
+    .logo-unit p{
+        font-size: 20%;
+        font-family: 'black ops one';
+    }
+    .description{
+        font-size: 10px;
+    }
+    .techy-button{
+        padding:1em;
+        /* margin-top: 5%; */
+        border-radius: 10px;
+        margin:0.5em;
+    }
+    /* .github{
+        padding:10px 1em;
+    } */
+    .buttons{
+        margin-left: 20%;
+    }
+    .github{
+        margin:0 15px;
+    }
+    #img_host {
+        height: auto;
+        max-width: 20%; /* Adjust the max-width to ensure responsiveness */
+        padding: 2% 1%;
+        transition: transform 0.3s ease;
+    }
+
+    #mar_img{
+        margin: 2%;
+        max-width: 20%;
+    }
+    .marquee_sponsors{
+        padding:0 1%;
+    }
+    .wrapper p{
+        font-size: 12px;
+    }
+    #temp-effect{
+        display: none;
+    }
+}

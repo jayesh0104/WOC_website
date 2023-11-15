@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Titillium+Web:ital@1&display=swap');
+body {
+    margin: 0;
+    font-family: 'Titillium Web';
+    color: #333;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(45,7,97,1) 78%), url('./icons/temp-el.gif') fixed center;
+    padding: 20px;
+    background-size: cover;
+    position: relative;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.nav-main {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position:sticky;
+}
+
+.nav-main li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 7px;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+}
+
+.nav-main li a:hover {
+    color: black;
+    background-color: white;
+    font-weight: 600;
+    transform: translateY(-5px);
+}
+
+.nav-socials {
+    display: flex;
+    margin-left: 20px;
+}
+
+.nav-socials a {
+    margin: 0 5px;
+}
+.faq-container {
+    padding: 20px;
+    border-left: 1px solid #ccc;
+    display: grid;
+    grid-template-rows: repeat(auto-fit);
+    color: white;
+    margin-top: 60px;
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+  }
+  
+  .faq-question {
+    cursor: pointer;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc ;
+    padding: 10px;
+  }
+  
+  .faq-answer {
+    display: none;
+    padding: 10px;
+  }
+  
+  .greeting-container {
+    padding: 20px;
+    grid-column: span 1;
+  }
+  
+  .greeting {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  section{
+    display: grid;
+    grid-template-columns: 0.75fr 1fr;
+    padding:0 35px;
+  }
+  p{
+    font-size: 18px;
+    margin: 0;
+  }
+  
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+
+  @media only screen and (max-width: 768px){
+    .nav-socials{
+        display: none;
+    }
+    p{
+        font-size: 12px;
+        font-weight: 100;
+    }
+    section{
+        display: grid;
+        grid-template-columns: 0.75fr 1fr;
+        padding:0;
+      }
+    .faq-container {
+
+        display: grid;
+        grid-template-rows: repeat(auto-fit);
+        color: white;
+        margin-top: 20px;
+      }
+    .nav-main{
+        font-size: 10px;
+        margin-left: 0px;
+    }
+    .faq-question,
+    .faq-answer,
+    h2,
+    p{
+        font-size: 10px;
+    }
+    .faq-item{
+        margin-top: -12px;
+    }
+  }

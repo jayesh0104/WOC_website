@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylefaq.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-socials">
+                <a href="https://www.example.com" target="_blank" rel="noreferrer">
+                    <img src="./icons/twitter.svg" alt="Example Logo" width="24" height="24">
+                </a>
+                <a href="https://www.twitter.com/example" target="_blank" rel="noreferrer">
+                    <img src="./icons/discord.svg" alt="Twitter Logo" width="24" height="24">
+                </a>
+                <a href="https://www.facebook.com/example" target="_blank" rel="noreferrer">
+                    <img src="./icons/youtube.svg" alt="Facebook Logo" width="24" height="24">
+                </a>
+            </div>
+            <div id="navigation">
+                <ul class="nav-main">
+                    <li><a href="./index.html" class="nav-link">Home</a></li>
+                    <li><a href="#schedule" class="nav-link">Schedule</a></li>
+                    <li><a href="#speaker" class="nav-link">Speakers</a></li>
+                    <li><a href="#prizes" class="nav-link">Prizes</a></li>
+                    <li><a href="./meet_the_team.html" class="nav-link">Team</a></li>
+                    <li><a href="./rules.html" class="nav-link">Rules</a></li>
+                    <li><a href="./faq.html" class="nav-link">FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="greeting-container">
+            <div class="greeting">
+                <h2>FAQs</h2>
+                <p>Need clarification on something we haven't covered?</p>
+                <p>You can write to us at xyz@vit.ac.in too.</p>
+            </div>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(1)">Q: What is the purpose of the hackathon?</div>
+                <div class="faq-answer" id="answer1">A: The hackathon is an event where participants collaborate to create innovative projects within a specified timeframe. It's an opportunity to learn, network, and showcase your skills.</div>
+            </div>
+        
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(2)">Q: How do I register for the hackathon?</div>
+                <div class="faq-answer" id="answer2">A: Registration details can be found on our official website. Follow the registration process to secure your spot and receive further instructions.</div>
+            </div>
+        
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(3)">Q: Are there any specific requirements for participation?</div>
+                <div class="faq-answer" id="answer3">A: Typically, hackathons are open to individuals with various skill levels. Check the event details for any specific requirements or prerequisites.</div>
+            </div>
+        
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(4)">Q: Are there any specific requirements for participation?</div>
+                <div class="faq-answer" id="answer4">A: Typically, hackathons are open to individuals with various skill levels. Check the event details for any specific requirements or prerequisites.</div>
+            </div>
+        
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(5)">Q: Are there any specific requirements for participation?</div>
+                <div class="faq-answer" id="answer5">A: Typically, hackathons are open to individuals with various skill levels. Check the event details for any specific requirements or prerequisites.</div>
+            </div>
+        
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(6)">Q: Are there any specific requirements for participation?</div>
+                <div class="faq-answer" id="answer6">A: Typically, hackathons are open to individuals with various skill levels. Check the event details for any specific requirements or prerequisites.</div>
+            </div>
+        
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(7)">Q: Are there any specific requirements for participation?</div>
+                <div class="faq-answer" id="answer7">A: Typically, hackathons are open to individuals with various skill levels. Check the event details for any specific requirements or prerequisites.</div>
+            </div>
+        
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(8)">Q: Are there any specific requirements for participation?</div>
+                <div class="faq-answer" id="answer8">A: Typically, hackathons are open to individuals with various skill levels. Check the event details for any specific requirements or prerequisites.</div>
+            </div>
+        
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(9)">Q: Are there any specific requirements for participation?</div>
+                <div class="faq-answer" id="answer9">A: Typically, hackathons are open to individuals with various skill levels. Check the event details for any specific requirements or prerequisites.</div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Tech Researchers Club VIT'C. Made with 🖤️ by Tech Researchers Club VIT'C. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleAnswer(id) {
+          var answer = document.getElementById('answer' + id);
+          if (answer.style.display === 'block') {
+            answer.style.display = 'none';
+          } else {
+            answer.style.display = 'block';
+          }
+        }
+      </script>
+</body>
+</html>

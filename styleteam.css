@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Titillium+Web:ital@1&display=swap');
+body {
+    margin: 0;
+    font-family: 'Titillium Web';
+    color: #ffffff;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(45,7,97,1) 78%), url('./icons/temp-el.gif') fixed center;
+    padding: 20px;
+    background-size: cover;
+    position: relative;
+}
+html {
+    scroll-behavior: smooth;
+  }
+.nav-container {
+    /*position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 1000; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    
+}
+
+.nav-main {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-main li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 7px;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+}
+
+.nav-main li a:hover {
+    color: black;
+    background-color: white;
+    font-weight: 600;
+    transform: translateY(-5px); /* Lift on hover */
+}
+
+.nav-socials {
+    display: flex;
+    margin-left: 20px;
+}
+
+.nav-socials a {
+    margin: 0 5px;
+}
+
+.heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    font-family: 'black ops one';
+    /* margin-top: 4em; */
+}
+.headdescription{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    
+}
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+    gap: 10px; /* Adjust the gap between cards */
+}
+.profile-card {
+    height: 350px;
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#7f80a9;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.profile-content {
+    padding-inline: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  background-color: #aaa;
+  border-radius: 50%;
+}
+.profile-picture img{
+    max-width: 100%;
+}
+.profile-name {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.profile-description {
+  margin-top: 5px;
+  color: #ffffff;
+  display: none;
+}
+.social-icons {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+  display: none;
+}
+.social-icons li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.social-icons a {
+  color: #ffffff;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+.social-icons a:hover {
+  color: #25a1ff;
+}
+.profile-card:hover{
+    transform: rotateY(180deg);
+}
+.profile-card:hover .profile-name,
+.profile-card:hover .profile-picture{
+    display: none;
+}
+.profile-card:hover .profile-description,
+.profile-card:hover .social-icons{
+    display: block;
+    transform: scaleX(-1);
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 900px){
+    .profile-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+        gap: 60px; /* Adjust the gap between cards */
+    }
+    /* .nav-socials{
+        display: none;
+    } */
+    .nav-main a{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 1270px){
+    .profile-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+        gap: 60px; /* Adjust the gap between cards */
+    }
+    .nav-main a{
+        font-size: 14px;
+    }
+    .profile-card{
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 1050px){
+    .profile-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+        gap: 60px; /* Adjust the gap between cards */
+    }
+    .nav-main a{
+        font-size: 12px;
+    }
+    .profile-card{
+        margin: auto;
+    }
+    .nav-socials{
+        display: none;
+    }
+    .headdescription{
+        font-size: 22px;
+    }
+    .heading{
+        font-size: 28px;
+    }
+}
+@media only screen and (max-width: 690px){
+    .profile-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Adjust the number of columns as needed */
+    }
+    .profile-card{
+        width: 290px;
+    }
+    .nav-socials{
+        display: none;
+    }
+    .nav-main li a{
+        font-size: 10px;
+        padding: 15px 2px;
+    }
+    .profile-card{
+        margin: auto;
+    }
+    #navigation{
+        margin: auto -30px;
+    }
+    .headdescription{
+        font-size: 14px;
+    }
+    .heading{
+        font-size: 20px;
+    }
+    footer{
+        font-size: 10px;
+    }
+}
